@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Pets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+     body {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background: #222;
+      color: white;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+/* Top Navigation Menu */
+    .menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .pets-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .pets-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .pets-section p {
+      max-width: 700px;
+      margin: 10px auto;
+      line-height: 1.6;
+    }
+
+    /* Photo Grid Styling */
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .photo-grid img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .photo-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Video Section */
+    .video-section {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .video-section video {
+      width: 40%;
+      height: 750px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+
+    /* Back Home Button */
+    .back-home {
+      margin-top: 40px;
+    }
+
+    .back-home button {
+      padding: 10px 20px;
+      background-color: #444;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: 16px;
+    }
+
+    .back-home button:hover {
+      background-color: #666;
+    }
+
+    /* Bonus Photo Dump Section */
+    .bonus-photos {
+      margin-top: 60px;
+    }
+
+    .bonus-photos h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Menu Section -->
+<nav class="menu">
+    <a href="index.html" target="_blank">🏠 Home</a></li>
+    <a href="about.html" target="_blank">👤 About Me</a></li>
+    <a href="family.html" target="_blank">👪 Family</a></li>
+    <a href="hobbies.html" target="_blank">🎮 Hobby</a></li>
+    <a href="education.html" target="_blank">🎓 Education</a></li>
+    <a href="contact.html" target="_blank">📱 Contact</a></li>
+</nav>
+
+  <section class="pets-section">
+    <h2>🐱 My Favorite Pets</h2>
+    <p>
+      I love <strong>cats</strong> the most! Their playful and gentle personality makes them amazing companions. I enjoy watching cat videos, learning about different breeds, and spending time with them whenever I can.
+    </p>
+    <p>
+      Cats bring peace and joy into my daily life, and I hope to have more of them around in the future. They're not just pets — they're family.
+    </p>
+
+    <!-- Photo Grid for Personal Cats -->
+    <div class="photo-grid">
+      <img src="c1.jpg" alt="Cat 1">
+      <img src="c2.jpg" alt="Cat 2">
+      <img src="c3.jpg" alt="Cat 3">
+      <img src="c4.jpg" alt="Cat 4">
+    </div>
+
+    <!-- Section About Cats at College -->
+    <div class="college-cats">
+      <h2>🐾 Beautiful & Cute Cats at My College</h2>
+      <p>
+        At my college, I’ve been lucky enough to meet some of the most adorable cats! These cats roam around the campus, spreading joy to students and staff alike. Their playful antics and friendly nature never fail to make everyone smile.
+      </p>
+      <p>
+        From curious kittens to regal adult cats, each one has its unique charm. They are often seen lounging in the sun, chasing after leaves, or playfully interacting with people. Some of them are even well-known figures at the college, with students often stopping by to give them some love and attention. It’s always a joy to spend time with these lovely felines.
+      </p>
+
+      <!-- Photo Grid for Cats at College -->
+      <div class="photo-grid">
+        <img src="cc2.jpg" alt="College Cat 1">
+        <img src="cc1.jpg" alt="College Cat 2">
+        <img src="cc3.jpg" alt="College Cat 3">
+        <img src="cc4.jpg" alt="College Cat 4">
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-section">
+      <h3>🎥 Watch My Cats</h3>
+      <!-- Insert your video file path here -->
+      <video controls>
+        <source src="mcv.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Bonus Photo Dump Section -->
+    <div class="bonus-photos">
+      <h2>📸 Bonus Cat Photos</h2>
+      <p>Here are some random, beautiful, and cute cat pictures that I just love!</p>
+
+      <div class="photo-grid">
+        <img src="bc3.jpg" alt="Bonus Cat 1">
+        <img src="bc2.jpg" alt="Bonus Cat 2">
+        <img src="bc1.jpg" alt="Bonus Cat 3">
+        <img src="bc4.jpg" alt="Bonus Cat 4">
+      </div>
+    </div>
+
+    <!-- Back to Home Button -->
+    <div class="back-home">
+      <button onclick="goHome()">🏠 Back to Home</button>
+    </div>
+  </section>
+
+  <script>
+    function goHome() {
+      window.open('index.html', '_self');
+      window.close();
+    }
+  </script>
+
+</body>
+</html>
+

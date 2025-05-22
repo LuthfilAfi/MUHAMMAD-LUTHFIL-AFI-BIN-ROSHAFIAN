@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Section</title>
+  <style>
+     body {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background: #222;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+/* Top Navigation Menu */
+    .menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .family-section {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    h2 {
+      font-size: 3em;
+      color: #fff;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #ccc;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    }
+
+    .carousel-slide {
+      display: none;
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .carousel-slide.active {
+      display: block;
+      opacity: 1;
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      font-size: 2em;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      transform: translateY(-50%);
+      z-index: 10;
+      transition: background-color 0.3s ease;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .prev {
+      left: 20px;
+    }
+
+    .next {
+      right: 20px;
+    }
+
+    .photo-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .photo {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .photo:hover img {
+      transform: scale(1.1);
+    }
+
+    .photo:hover {
+      transform: scale(1.1);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
+    }
+
+    .back-home {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .back-home button {
+      background-color: #444;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1.2em;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .back-home button:hover {
+      background-color: #666;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-slide {
+        height: 300px;
+      }
+
+      .photo {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- Menu Section -->
+<nav class="menu">
+    <a href="index.html" target="_blank">🏠 Home</a></li>
+    <a href="about.html" target="_blank">👤 About Me</a></li>
+    <a href="family.html" target="_blank">👪 Family</a></li>
+    <a href="hobbies.html" target="_blank">🎮 Hobby</a></li>
+    <a href="education.html" target="_blank">🎓 Education</a></li>
+    <a href="contact.html" target="_blank">📱 Contact</a></li>
+</nav>
+  <section class="family-section">
+    <h2>👨‍👩‍👧‍👦 My Family</h2>
+    <p>
+      I come from a loving and supportive family that has always motivated me to chase my dreams. They’ve taught me the importance of staying grounded, working hard, and embracing every opportunity. Their constant encouragement plays a big role in my journey.
+    </p>
+
+    <!-- Carousel container -->
+    <div class="carousel-container">
+      <img class="carousel-slide active" src="fam1.jpg" alt="Family 1">
+      <img class="carousel-slide" src="fam2.jpg" alt="Family 2">
+      <img class="carousel-slide" src="fam3.jpg" alt="Family 3">
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <!-- Circle Photos -->
+    <div class="photo-container">
+      <div class="photo"><img src="fam4.jpg" alt="Family Photo 1"></div>
+      <div class="photo"><img src="fam5.jpg" alt="Family Photo 2"></div>
+      <div class="photo"><img src="fam6.jpg" alt="Family Photo 3"></div>
+    </div>
+
+    <!-- Back to Home Button -->
+    <div class="back-home">
+      <button onclick="goHome()">🏠 Back to Home</button>
+    </div>
+  </section>
+
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[index].classList.add('active');
+    }
+
+    function plusSlides(n) {
+      slideIndex = (slideIndex + n + slides.length) % slides.length;
+      showSlide(slideIndex);
+    }
+
+    showSlide(slideIndex);
+
+    function goHome() {
+      window.open('index.html', '_self');
+      window.close();
+    }
+  </script>
+
+</body>
+</html>

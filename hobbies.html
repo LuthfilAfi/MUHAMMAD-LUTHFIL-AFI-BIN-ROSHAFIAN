@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Hobbies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+     body {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background: #222;
+      color: white;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+/* Top Navigation Menu */
+    .menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .hobbies-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .hobbies-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .hobbies-section p {
+      max-width: 700px;
+      margin: 10px auto;
+      line-height: 1.6;
+    }
+
+    /* Hobby Cards Styling */
+    .hobby-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .hobby-card {
+      background-color: #2c2c2c;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .hobby-card:hover {
+      transform: scale(1.05);
+    }
+
+    .hobby-card img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .hobby-card h3 {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+
+    .hobby-card p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    /* Back to Home Button */
+    .back-home {
+      margin-top: 40px;
+    }
+
+    .back-home button {
+      padding: 10px 20px;
+      background-color: #444;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: 16px;
+    }
+
+    .back-home button:hover {
+      background-color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Menu Section -->
+<nav class="menu">
+    <a href="index.html" target="_blank">🏠 Home</a></li>
+    <a href="about.html" target="_blank">👤 About Me</a></li>
+    <a href="family.html" target="_blank">👪 Family</a></li>
+    <a href="hobbies.html" target="_blank">🎮 Hobby</a></li>
+    <a href="education.html" target="_blank">🎓 Education</a></li>
+    <a href="contact.html" target="_blank">📱 Contact</a></li>
+</nav>
+
+  <section class="hobbies-section">
+    <h2>🎨 My Hobbies</h2>
+    <p>
+      I have a diverse range of hobbies that help me stay active, relaxed, and creative. From playing futsal to diving into the worlds of manga and manhwa, these activities give me a sense of balance in my life.
+    </p>
+
+    <div class="hobby-cards">
+      <!-- Futsal Card -->
+      <div class="hobby-card">
+        <img src="FUTSAL.jpg" alt="Futsal">
+        <h3>⚽ Futsal</h3>
+        <p>
+          Futsal is one of my favorite sports. It's not just about playing, but also about teamwork and staying active. The speed and strategy involved make it a thrilling experience every time.
+        </p>
+      </div>
+
+      <!-- Manga and Manhwa Card -->
+      <div class="hobby-card">
+        <img src="manga.jpg" alt="Manga & Manhwa">
+        <h3>📚 Manga & Manhwa</h3>
+        <p>
+          Reading manga and manhwa is my way of escaping into different worlds. I love the art, the stories, and how they inspire my imagination. My favorite genres are action, fantasy, and drama.
+        </p>
+      </div>
+
+      <!-- Gaming Card -->
+      <div class="hobby-card">
+        <img src="valo.avif" alt="Gaming">
+        <h3>🎮 Gaming</h3>
+        <p>
+          Gaming is one of my greatest hobbies. I love immersing myself in various games, but two of my absolute favorites are <strong>eFootball 25</strong> and <strong>Valorant</strong>. eFootball 25 allows me to engage in thrilling football matches, putting my strategy and skills to the test. Meanwhile, <strong>Valorant</strong> is a tactical first-person shooter that challenges my teamwork and quick thinking. These games provide me with a perfect balance of excitement, strategy, and friendly competition.
+        </p>
+        <p>
+          Both games have become a big part of my downtime. They help me relax, unwind, and connect with friends. Plus, they keep me sharp with fast-paced action and strategic planning.
+        </p>
+      </div>
+
+      <!-- Gym Card -->
+      <div class="hobby-card">
+        <img src="gym.jpg" alt="Gym">
+        <h3>💪 Gym & Fitness</h3>
+        <p>
+          Gym workouts and fitness have always been a big part of my life. Going to the gym helps me stay healthy, build strength, and improve my mental well-being. Whether it's weightlifting, cardio, or simply staying active, the gym is where I challenge myself to push my limits and maintain a balanced lifestyle.
+        </p>
+        <p>
+          Working out not only improves my physical health but also helps me release stress and feel more energized throughout the day. It's one of my favorite ways to unwind and stay fit.
+        </p>
+      </div>
+     </div>
+
+    <!-- Back to Home Button -->
+    <div class="back-home">
+      <button onclick="goHome()">🏠 Back to Home</button>
+    </div>
+  </section>
+
+  <script>
+    function goHome() {
+      window.open('index.html', '_self');
+      window.close();
+    }
+  </script>
+
+</body>
+</html>
+
